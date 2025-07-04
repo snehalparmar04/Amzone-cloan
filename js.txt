@@ -1,0 +1,19 @@
+// Alert when search is clicked
+document.querySelector(".search-incon").addEventListener("click", function () {
+    const input = document.querySelector(".search-input").value;
+    alert("You searched for: " + input);
+});
+
+// Simple cart item counter
+let cartCount = 0;
+document.querySelector(".nav-cart").addEventListener("click", function () {
+    cartCount++;
+    alert(`🛒 Items in cart: ${cartCount}`);
+});
+
+// Scroll to top on "Back to Top" click
+document.querySelector(".foot-panel1").addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+
